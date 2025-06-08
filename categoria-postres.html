@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo_mesa_digital.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Postres</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo_nav.png" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!--Espacio donde se insertarán las opciones comunes-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-links-comunes"></ul>
+
+                <!--Espacio donde se insertarán las opciones según la sesión-->
+                <ul class="navbar-nav ms-auto" id="nav-links-sesion"></ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <img src="img/logo_mesa_digital.png" alt="Logo Mesa Digital" class="logo" />
+        <h1>Postres</h1>
+    </header>
+    <main class="categorias">
+        <div class="categoria">
+            <a data-bs-toggle="modal" data-bs-target="#mousseChocolateModal">
+                <img src="img/mousse_chocolate.png" alt="Mousse Chocolate" />
+                <h3>Mousse de Chocolate Clásico (sin huevo crudo)</h3>
+            </a>
+        </div>
+        <div class="categoria">
+            <a data-bs-toggle="modal" data-bs-target="#brownieModal">
+                <img src="img/brownies_chocolate.png" alt="Brownies Chocolate" />
+                <h3>Brownies de Chocolate con Nuez (Súper Húmedos)</h3>
+            </a>
+        </div>
+    </main>
+    <div class="modal" tabindex="-1" id="brownieModal">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Brownies de Chocolate con Nuez (Súper Húmedos)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Un clásico irresistible, perfectos para compartir o para un antojo dulce.</p>
+
+                    <p>
+                        <strong>Tiempo de preparación:</strong> 15 minutos<br>
+                        <strong>Tiempo de cocción:</strong> 25-30 minutos<br>
+                        <strong>Porciones:</strong> 9-12 (en un molde cuadrado de 20x20 cm)
+                    </p>
+
+                    <h5>Ingredientes:</h5>
+                    <ul>
+                        <li>125g de mantequilla sin sal</li>
+                        <li>150g de chocolate semi-amargo (mínimo 60% cacao), picado</li>
+                        <li>2 huevos grandes</li>
+                        <li>200g de azúcar</li>
+                        <li>1 cucharadita de extracto de vainilla</li>
+                        <li>75g de harina de trigo (todo uso)</li>
+                        <li>30g de cacao en polvo sin azúcar</li>
+                        <li>½ cucharadita de sal</li>
+                        <li>100g de nueces picadas (opcional, pero muy recomendado)</li>
+                    </ul>
+
+                    <h5>Instrucciones:</h5>
+                    <ol>
+                        <li><strong>Precalentar y preparar el molde:</strong> Precalienta el horno a 180°C (350°F).
+                            Engrasa un molde cuadrado de 20x20 cm (8x8 pulgadas) y fórralo con papel de horno,
+                            dejando que sobresalgan los bordes para poder desmoldar fácilmente.</li>
+                        <li><strong>Derretir el chocolate y la mantequilla:</strong> En un bol resistente al calor,
+                            derrite la mantequilla y el chocolate picado a baño maría o en el microondas en
+                            intervalos cortos, removiendo cada 30 segundos, hasta obtener una mezcla suave y
+                            brillante. Deja entibiar un poco.</li>
+                        <li><strong>Mezclar líquidos:</strong> En un bol grande, bate los huevos con el azúcar y la
+                            vainilla hasta que la mezcla esté pálida y ligeramente espumosa.</li>
+                        <li><strong>Combinar chocolate:</strong> Vierte la mezcla de chocolate derretido (que ya
+                            debe estar tibia, no caliente) sobre la mezcla de huevos y azúcar. Bate suavemente con
+                            una espátula o batidor de mano hasta que esté bien combinado.</li>
+                        <li><strong>Incorporar secos:</strong> En un bol aparte, tamiza la harina, el cacao en polvo
+                            y la sal. Agrega gradualmente esta mezcla de ingredientes secos a la mezcla de
+                            chocolate, removiendo con una espátula solo hasta que no queden grumos de harina. No
+                            mezcles en exceso.</li>
+                        <li><strong>Añadir nueces:</strong> Si usas nueces, incorpóralas a la masa.</li>
+                        <li><strong>Hornear:</strong> Vierte la masa en el molde preparado y extiéndela de manera
+                            uniforme.</li>
+                        <li><strong>Tiempo de cocción:</strong> Hornea durante 25-30 minutos. El brownie estará
+                            listo cuando los bordes estén firmes y el centro aún se sienta ligeramente húmedo al
+                            tacto (un palillo insertado en el centro debe salir con algunas migas húmedas, no
+                            completamente limpio, para que queden húmedos).</li>
+                        <li><strong>Enfriar:</strong> Retira del horno y deja enfriar completamente en el molde
+                            sobre una rejilla antes de desmoldar y cortar en cuadrados. Esto es crucial para que
+                            adquieran su textura fudgy.</li>
+                    </ol>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="mousseChocolateModal">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mousse de Chocolate Clásica (sin huevo crudo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Un postre elegante y cremoso, perfecto para cualquier ocasión.</p>
+
+                    <p>
+                        <strong>Tiempo de preparación:</strong> 20 minutos<br>
+                        <strong>Tiempo de refrigeración:</strong> 2-4 horas<br>
+                        <strong>Porciones:</strong> 4-6
+                    </p>
+
+                    <h5>Ingredientes:</h5>
+                    <ul>
+                        <li>200g de chocolate semi-amargo (mínimo 60% cacao), picado</li>
+                        <li>100ml de leche entera</li>
+                        <li>50g de azúcar (ajusta al gusto)</li>
+                        <li>300ml de crema de leche para batir (mínimo 35% de grasa), muy fría</li>
+                        <li>1 cucharadita de extracto de vainilla</li>
+                        <li>Una pizca de sal (opcional, realza el sabor del chocolate)</li>
+                    </ul>
+
+                    <h5>Instrucciones:</h5>
+                    <ol>
+                        <li><strong>Preparar la base de chocolate:</strong> En un cazo pequeño, calienta la leche a
+                            fuego medio hasta que esté a punto de hervir (sin que hierva). Retira del fuego.</li>
+                        <li><strong>Disolver el chocolate:</strong> Agrega el chocolate picado y el azúcar a la
+                            leche caliente. Deja reposar por 1-2 minutos, luego remueve suavemente con una espátula
+                            o batidor de mano hasta que el chocolate se derrita por completo y la mezcla esté suave
+                            y homogénea. Agrega la pizca de sal y la vainilla. Deja enfriar a temperatura ambiente.
+                        </li>
+                        <li><strong>Montar la crema:</strong> En un bol grande y frío (puedes enfriarlo previamente
+                            en el congelador), vierte la crema de leche muy fría. Bate con una batidora eléctrica a
+                            velocidad media-alta hasta que se formen picos suaves. Ten cuidado de no sobrebatir para
+                            que no se corte.</li>
+                        <li><strong>Combinar mezclas:</strong> Una vez que la mezcla de chocolate esté fría (es
+                            crucial que no esté caliente para no derretir la crema montada), vierte aproximadamente
+                            un tercio de la crema batida sobre la mezcla de chocolate. Con movimientos envolventes
+                            suaves, integra la crema para aligerar la mezcla de chocolate.</li>
+                        <li><strong>Terminar la mezcla:</strong> Luego, vierte el resto de la crema batida y
+                            continúa mezclando con movimientos envolventes hasta que todo esté bien combinado y no
+                            queden vetas blancas. No batas en exceso para mantener la ligereza de la mousse.</li>
+                        <li><strong>Refrigerar:</strong> Vierte la mousse en copas individuales o en un bol grande.
+                            Cubre con papel film y refrigera por al menos 2-4 horas, o idealmente toda la noche,
+                            para que adquiera la consistencia deseada.</li>
+                        <li><strong>Servir:</strong> Decora con virutas de chocolate, cacao en polvo, frutos rojos o
+                            un poco más de crema batida antes de servir.</li>
+                    </ol>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="js/sesion.js"></script>
+</body>
+
+</html>

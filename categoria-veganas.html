@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo_mesa_digital.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Veganas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo_nav.png" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!--Espacio donde se insertarán las opciones comunes-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-links-comunes"></ul>
+
+                <!--Espacio donde se insertarán las opciones según la sesión-->
+                <ul class="navbar-nav ms-auto" id="nav-links-sesion"></ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <img src="img/logo_mesa_digital.png" alt="Logo Mesa Digital" class="logo" />
+        <h1>Veganas</h1>
+    </header>
+    <main class="categorias">
+        <div class="categoria">
+            <a data-bs-toggle="modal" data-bs-target="#tacosLentejasModal">
+                <img src="img/tacos_lentejas.png" alt="Tacos de Lentejas" />
+                <h3>Tacos de Lentejas Especiadas con Salsa de Aguacate y Cilantro</h3>
+            </a>
+        </div>
+    </main>
+    <div class="modal" tabindex="-1" id="tacosLentejasModal">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tacos de Lentejas Especiadas con Salsa de Aguacate y Cilantro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Una opción vegana sabrosa, nutritiva y con un toque mexicano, perfecta para un almuerzo o
+                        cena ligera y divertida.</p>
+
+                    <p>
+                        <strong>Tiempo de preparación:</strong> 15 minutos<br>
+                        <strong>Tiempo de cocción:</strong> 25-30 minutos<br>
+                        <strong>Porciones:</strong> 4-6
+                    </p>
+
+                    <h5>Ingredientes:</h5>
+                    <h6>Para el Relleno de Lentejas:</h6>
+                    <ul>
+                        <li>1 cucharada de aceite de oliva</li>
+                        <li>1 cebolla mediana, picada finamente</li>
+                        <li>2 dientes de ajo, picados</li>
+                        <li>1 pimiento rojo, picado en cubos pequeños</li>
+                        <li>1 taza (aprox. 200g) de lentejas pardinas o verdes, enjuagadas</li>
+                        <li>3 tazas de caldo de verduras</li>
+                        <li>1 lata (400g) de tomate triturado o puré de tomate</li>
+                        <li>1 cucharadita de comino molido</li>
+                        <li>1 cucharadita de pimentón dulce</li>
+                        <li>½ cucharadita de chile en polvo (o al gusto, si te gusta picante)</li>
+                        <li>Sal y pimienta al gusto</li>
+                        <li>1 cucharadita de orégano seco</li>
+                    </ul>
+
+                    <h6>Para la Salsa de Aguacate y Cilantro:</h6>
+                    <ul>
+                        <li>1 aguacate maduro</li>
+                        <li>¼ taza de cilantro fresco, picado</li>
+                        <li>2 cucharadas de jugo de limón o lima</li>
+                        <li>2 cucharadas de agua (o más, para ajustar la consistencia)</li>
+                        <li>Sal al gusto</li>
+                    </ul>
+
+                    <h6>Para Armar los Tacos:</h6>
+                    <ul>
+                        <li>12-16 tortillas de maíz o trigo (pequeñas)</li>
+                        <li>Lechuga fresca picada</li>
+                        <li>Tomate picado en cubos</li>
+                        <li>Cebolla morada picada</li>
+                        <li>Limones o limas, cortados en gajos (para exprimir)</li>
+                    </ul>
+
+                    <h5>Instrucciones:</h5>
+                    <ol>
+                        <li><strong>Preparar el Relleno de Lentejas:</strong> En una olla o sartén grande, calienta
+                            el aceite de oliva a fuego medio. Agrega la cebolla picada y cocina hasta que esté
+                            transparente, unos 5-7 minutos.</li>
+                        <li><strong>Añade el ajo picado y el pimiento rojo:</strong> Cocina por 3-5 minutos más,
+                            hasta que el pimiento esté ligeramente tierno.</li>
+                        <li><strong>Incorpora las especias y tomate:</strong> Agrega la pasta de curry rojo (si
+                            usas), comino, pimentón, chile en polvo, orégano, sal y pimienta. Remueve bien. Vierte
+                            el tomate triturado y el caldo de verduras.</li>
+                        <li><strong>Cocinar las Lentejas:</strong> Añade las lentejas enjuagadas. Lleva a
+                            ebullición, luego reduce el fuego a bajo, tapa y cocina por 20-25 minutos, o hasta que
+                            las lentejas estén tiernas y la mayor parte del líquido se haya absorbido. Remueve
+                            ocasionalmente. Si queda demasiado líquido, destapa y cocina unos minutos más a fuego
+                            medio-alto. Las lentejas deben tener una consistencia que se pueda rellenar fácilmente.
+                        </li>
+                        <li><strong>Preparar la Salsa de Aguacate y Cilantro:</strong> Mientras las lentejas se
+                            cocinan, prepara la salsa. En un procesador de alimentos pequeño o licuadora, combina el
+                            aguacate, cilantro, jugo de limón o lima, agua y sal. Procesa hasta obtener una salsa
+                            suave y cremosa. Ajusta la consistencia añadiendo más agua si es necesario, y rectifica
+                            la sal.</li>
+                        <li><strong>Calentar las Tortillas:</strong> Calienta las tortillas de maíz o trigo en una
+                            sartén seca a fuego medio-alto por 30 segundos a 1 minuto por cada lado, hasta que estén
+                            suaves y ligeramente flexibles. También puedes calentarlas en el microondas envueltas en
+                            un paño húmedo.</li>
+                        <li><strong>Armar los Tacos:</strong> Coloca las tortillas calientes. Rellena cada tortilla
+                            con una porción generosa del guiso de lentejas especiadas. Cubre con lechuga picada,
+                            tomate picado y cebolla morada picada.</li>
+                        <li><strong>Finalizar:</strong> Termina con un poco de la salsa de aguacate y cilantro por
+                            encima. Sirve con gajos de limón o lima para exprimir al gusto.</li>
+                    </ol>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="js/sesion.js"></script>
+</body>
+
+</html>

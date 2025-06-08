@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo_mesa_digital.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Almuerzos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo_nav.png" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!--Espacio donde se insertarán las opciones comunes-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-links-comunes"></ul>
+
+                <!--Espacio donde se insertarán las opciones según la sesión-->
+                <ul class="navbar-nav ms-auto" id="nav-links-sesion"></ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <img src="img/logo_mesa_digital.png" alt="Logo Mesa Digital" class="logo" />
+        <h1>Almuerzos</h1>
+    </header>
+    <main class="categorias">
+        <div class="categoria">
+            <a data-bs-toggle="modal" data-bs-target="#curryLentejasModal">
+                <img src="img/curry_lentejas.png" alt="Curry de Lentejas" />
+                <h3>Bowl de Curry de Lentejas Rojo Rápido</h3>
+            </a>
+        </div>
+    </main>
+    <div class="modal" tabindex="-1" id="curryLentejasModal">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bowl de Curry de Lentejas Rojo Rápido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Un curry reconfortante y lleno de sabor, perfecto para un almuerzo caliente y nutritivo.</p>
+                    <p><strong>Tiempo de preparación:</strong> 10 minutos<br>
+                        <strong>Tiempo de cocción:</strong> 25-30 minutos<br>
+                        <strong>Porciones:</strong> 3-4
+                    </p>
+
+                    <h5>Ingredientes:</h5>
+                    <ul>
+                        <li>1 cucharada de aceite de coco o vegetal</li>
+                        <li>1 cebolla mediana, picada</li>
+                        <li>2 dientes de ajo, picados</li>
+                        <li>1 trozo de jengibre (aprox. 2 cm), rallado o picado muy fino</li>
+                        <li>1 cucharada de pasta de curry rojo (ajusta al gusto picante)</li>
+                        <li>1 lata (400g) de tomate triturado o puré de tomate</li>
+                        <li>1 lata (400ml) de leche de coco (la versión "full-fat" da mejor cremosidad)</li>
+                        <li>1 taza (aprox. 200g) de lentejas rojas (o coral), bien enjuagadas</li>
+                        <li>3 tazas de caldo de verduras</li>
+                        <li>1 zanahoria grande, cortada en cubos pequeños</li>
+                        <li>1 taza de espinacas frescas (o col rizada, kale)</li>
+                        <li>Sal y pimienta negra al gusto</li>
+                        <li>Opcional para servir: arroz basmati o integral, cilantro fresco picado, gajos de limón o
+                            lima.</li>
+                    </ul>
+
+                    <h5>Instrucciones:</h5>
+                    <ol>
+                        <li><strong>Sofrito aromático:</strong> En una olla grande o cacerola, calienta el aceite de
+                            coco a fuego medio. Agrega la cebolla picada y cocina hasta que esté transparente, unos
+                            5 minutos.</li>
+                        <li><strong>Incorpora el ajo picado y el jengibre rallado:</strong> Cocina por 1-2 minutos
+                            más hasta que estén fragantes, teniendo cuidado de que el ajo no se queme.</li>
+                        <li><strong>Añadir pasta de curry:</strong> Agrega la pasta de curry rojo y remueve bien por
+                            un minuto para que libere sus aromas.</li>
+                        <li><strong>Base del curry:</strong> Vierte el tomate triturado y la leche de coco. Remueve
+                            para integrar.</li>
+                        <li><strong>Lentejas y caldo:</strong> Añade las lentejas rojas enjuagadas y el caldo de
+                            verduras. Lleva a ebullición, luego reduce el fuego a bajo, tapa y cocina por 15-20
+                            minutos, o hasta que las lentejas estén tiernas. Las lentejas rojas se deshacen un poco,
+                            lo cual es ideal para un curry cremoso.</li>
+                        <li><strong>Agregar vegetales:</strong> A mitad de la cocción de las lentejas (unos 10
+                            minutos antes de que estén listas), agrega la zanahoria en cubos para que se cocine bien
+                            pero no se deshaga.</li>
+                        <li><strong>Finalizar y sazonar:</strong> Una vez que las lentejas estén tiernas y la
+                            zanahoria cocida, retira la olla del fuego. Agrega las espinacas frescas y remueve hasta
+                            que se marchiten.</li>
+                        <li><strong>Prueba y ajusta:</strong> Prueba y ajusta la sal y pimienta al gusto. Si lo
+                            deseas, puedes añadir una pizca de azúcar o un chorrito de jugo de limón para equilibrar
+                            los sabores.</li>
+                        <li><strong>Servir:</strong> Sirve el curry caliente en bowls, acompañado de arroz basmati o
+                            integral. Decora con cilantro fresco picado y un gajo de limón o lima si lo deseas.</li>
+                    </ol>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/sesion.js"></script>
+</body>
+
+</html>
