@@ -11,24 +11,27 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center align-items-center reset-container">
-        <div class="reset-box text-center">
+    <div class="container d-flex justify-content-center align-items-center login-container">
+        <div class="login-box text-center">
             <img src="img/logo_mesa_digital.png" alt="Logo" class="logo" />
             <h2 class="mb-4">Restablecer Contraseña</h2>
             <form id="form-reset">
                 <div class="mb-3 text-start">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required />
+                    <div class="invalid-feedback">Indica un mail válido.</div>
                 </div>
                 <div class="mb-3 text-start">
                     <label for="new-password" class="form-label">Nueva contraseña</label>
                     <input type="password" class="form-control" id="new-password" placeholder="Nueva contraseña"
                         required />
+                    <div class="invalid-feedback">Debe tener mínimo 8 caracteres, máximo 20, 1 número, 1 mayúscula, 1 minúscula y un símbolo.</div>
                 </div>
                 <div class="mb-3 text-start">
                     <label for="confirm-password" class="form-label">Repetir contraseña</label>
                     <input type="password" class="form-control" id="confirm-password" placeholder="Repetir contraseña"
                         required />
+                    <div class="invalid-feedback">Debe coincidir con la anterior.</div>
                 </div>
                 <button type="submit" class="btn btn-dark w-100">Restablecer</button>
             </form>

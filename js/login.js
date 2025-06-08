@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             nombre: "Administrador",
             usuario: "admin",
             email: "admin@mesadigital.com",
-            password: "Admin123",
+            password: "Admin123*",
             tipo: "admin"
         };
         usuarios.push(admin);
@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Función para iniciar sesión con email y contraseña
 function login(email, password) {
+    if (!validarEmail("email") || !validarPasswordFormato("password")) {
+        return;
+    }
+
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
     const usuario = usuarios.find(u => u.email === email && u.password === password);

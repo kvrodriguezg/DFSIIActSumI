@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const nueva = document.getElementById("new-password").value.trim();
         const confirmar = document.getElementById("confirm-password").value.trim();
 
-        if (!validarEmail("email") || !validarPassword("new-password", "confirm-password")) {
+        if (!validarEmail("email") || !validarPasswords("new-password", "confirm-password")) {
             return;
         }
 
