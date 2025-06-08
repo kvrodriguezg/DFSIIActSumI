@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restablecer Contraseña</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" href="img/logo_mesa_digital.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center reset-container">
+        <div class="reset-box text-center">
+            <img src="img/logo_mesa_digital.png" alt="Logo" class="logo" />
+            <h2 class="mb-4">Restablecer Contraseña</h2>
+            <form id="form-reset">
+                <div class="mb-3 text-start">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required />
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="new-password" class="form-label">Nueva contraseña</label>
+                    <input type="password" class="form-control" id="new-password" placeholder="Nueva contraseña"
+                        required />
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="confirm-password" class="form-label">Repetir contraseña</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Repetir contraseña"
+                        required />
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Restablecer</button>
+            </form>
+            <div class="mt-4">
+                ¿Ya tienes cuenta? <a href="login.html" class="fw-bold">Inicia sesión</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/validaciones.js"></script>
+    <script src="js/recuperar_clave.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
