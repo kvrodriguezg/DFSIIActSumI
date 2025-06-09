@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //Enlaces según el tipo de sesión
     if (sesion?.logueado) {
         let linksSesion = `
-            <li class="nav-item"><a class="nav-link" href="perfil.html">Mi Perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="mi-perfil.html">Mi Perfil</a></li>
         `;
 
         //Enlace para admin

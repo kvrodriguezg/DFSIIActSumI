@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo_mesa_digital.png">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Mi Perfil - La Mesa Digital</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo_nav.png" alt="Logo" width="40" height="40" class="me-2">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-links-comunes"></ul>
+                <ul class="navbar-nav ms-auto" id="nav-links-sesion"></ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="w-100" style="max-width: 500px;">
+            <h2 class="mb-4 text-center">Mi Perfil</h2>
+            <form id="form-perfil">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="rut" class="form-label">RUT</label>
+                    <input type="text" class="form-control" id="rut" required readonly>
+                    <div class="invalid-feedback">Ingresa un RUT válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email">
+                    <div class="invalid-feedback">Indica un correo válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" required pattern="[0-9]{9}" />
+                    <div class="invalid-feedback">Ingresa un número de 9 dígitos.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" required>
+                    <div class="invalid-feedback">Debes ser mayor de 13 años.</div>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Guardar Cambios</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/mi-perfil.js"></script>
+</body>
+
+</html>

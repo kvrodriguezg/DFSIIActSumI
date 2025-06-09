@@ -14,11 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 const password = document.getElementById("password").value;
 
                 const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+                
 
+                const existeRut = usuarios.some(u => u.rut === rut);
                 const existe = usuarios.some(u => u.email === email);
 
                 if (existe) {
                     alert("Ya existe una cuenta con ese correo.");
+                    return;
+                }
+
+                if (existeRut) {
+                    alert("Ya existe una cuenta con dicho RUT.");
                     return;
                 }
 
@@ -41,4 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+});
+
+//Solo admitir numeros en el campo RUT
+document.getElementById("rut").addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
 });

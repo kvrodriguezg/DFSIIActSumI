@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!existeAdmin) {
         const admin = {
             nombre: "Administrador",
-            usuario: "admin",
+            rut: "11111111-1",
             email: "admin@mesadigital.com",
+            telefono: "999999999",
             password: "Admin123*",
             tipo: "admin"
         };
@@ -31,7 +32,7 @@ function login(email, password) {
     if (usuario) {
         localStorage.setItem("sesion", JSON.stringify({
             logueado: true,
-            usuario: usuario.usuario,
+            email: usuario.email,
             tipo: usuario.tipo
         }));
 
