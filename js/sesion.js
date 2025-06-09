@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //Enlace para admin
         if (sesion.tipo === "admin") {
-            linksSesion += `<li class="nav-item"><a class="nav-link" href="admin.html">Panel Admin</a></li>`;
+            linksSesion += `<li class="nav-item"><a class="nav-link" href="panel-admin.html">Panel Admin</a></li>`;
         }
 
         linksSesion += `
