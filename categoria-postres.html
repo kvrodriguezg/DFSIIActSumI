@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
     <title>Postres</title>
 </head>
 
@@ -39,15 +40,21 @@
     </header>
     <main class="categorias">
         <div class="categoria">
-            <a data-bs-toggle="modal" data-bs-target="#mousseChocolateModal">
+            <a>
                 <img src="img/mousse_chocolate.png" alt="Mousse Chocolate" />
                 <h3>Mousse de Chocolate Clásico (sin huevo crudo)</h3>
+                <button class="btn btn-warning btn-sm agregar-favorito" data-receta="Mousse de Chocolate"><i class="ti ti-star"></i></button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mousseChocolateModal"><i
+                        class="ti ti-eye"></i></button>
             </a>
         </div>
         <div class="categoria">
-            <a data-bs-toggle="modal" data-bs-target="#brownieModal">
-                <img src="img/brownies_chocolate.png" alt="Brownies Chocolate" />
+            <a>
+                <img src="img/brownies_chocolate.png" alt="Brownies de Chocolate con Nuez" />
                 <h3>Brownies de Chocolate con Nuez (Súper Húmedos)</h3>
+                <button class="btn btn-warning btn-sm agregar-favorito" data-receta="Brownies de Chocolate con Nuez"><i class="ti ti-star"></i></button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#brownieModal"><i
+                        class="ti ti-eye"></i></button>
             </a>
         </div>
     </main>
@@ -180,7 +187,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script src="js/sesion.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/agregar-favorito.js"></script>
 </body>
 
 </html>

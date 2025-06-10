@@ -37,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
             linksSesion += `<li class="nav-item"><a class="nav-link" href="panel-admin.html">Panel Admin</a></li>`;
         }
 
+        //Enlace para usuarios normales
+        if (sesion.tipo === "normal") {
+            linksSesion += `<li class="nav-item"><a class="nav-link" href="favoritos.html">Mis Favoritos</a></li>`;
+        }        
+
         linksSesion += `
             <li class="nav-item"><a class="nav-link" href="#" id="cerrar-sesion">Cerrar sesión</a></li>
         `;

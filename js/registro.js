@@ -52,5 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Solo admitir numeros en el campo RUT
 document.getElementById("rut").addEventListener("input", function () {
-    this.value = this.value.replace(/[^0-9]/g, '');
+    this.value = this.value.replace(/[^0-9kK]/g, '');
 });
