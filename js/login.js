@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             email: "admin@mesadigital.com",
             telefono: "999999999",
             password: "Admin123*",
+            fechaNacimiento: "1990-10-01",
             tipo: "admin"
         };
         usuarios.push(admin);
